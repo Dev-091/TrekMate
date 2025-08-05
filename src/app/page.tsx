@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -7,14 +8,14 @@ export default function Home() {
       {/* Header */}
       <header className="absolute top-0 left-0 right-0 z-10 px-4 sm:px-10 py-5">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <a className="flex items-center gap-3" href="#">
+          <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
             <svg className="h-8 w-8 text-[var(--primary)]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
               <path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z" fill="currentColor"></path>
             </svg>
             <h2 className="text-white text-2xl font-bold tracking-tighter">TrekMate</h2>
-          </a>
+          </Link>
         
-          <a className="hidden md:inline-flex items-center justify-center rounded-full h-12 px-6 bg-[var(--primary)] text-black text-base font-bold tracking-wide hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105" href="#">
+          <a className="hidden md:inline-flex items-center justify-center rounded-full h-12 px-6 bg-[var(--primary)] text-black text-base font-bold tracking-wide hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105" href="/auth/choice">
             Get Started
           </a>
           <button className="md:hidden text-white">
@@ -148,7 +149,7 @@ export default function Home() {
             <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-stone-300">
               Join thousands of adventurers and start your journey today.
             </p>
-            <a className="mt-8 inline-flex items-center justify-center rounded-full h-14 px-8 bg-[var(--primary)] text-black text-lg font-bold tracking-wide hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105" href="#">
+            <a className="mt-8 inline-flex items-center justify-center rounded-full h-14 px-8 bg-[var(--primary)] text-black text-lg font-bold tracking-wide hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105" href="/auth/choice">
               Get Started Now
             </a>
           </div>
@@ -160,10 +161,12 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex items-center gap-3">
-              <svg className="h-6 w-6 text-[var(--primary)]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                <path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z" fill="currentColor"></path>
-              </svg>
-              <span className="text-white font-bold">TrekMate</span>
+              <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+                <svg className="h-6 w-6 text-[var(--primary)]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z" fill="currentColor"></path>
+                </svg>
+                <span className="text-white font-bold">TrekMate</span>
+              </Link>
             </div>
             <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
               <a className="text-stone-400 hover:text-white transition-colors" href="#">Privacy Policy</a>
